@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./code-challenge/tests",
+        "./code-challenge/lib"
+    ]
+}
