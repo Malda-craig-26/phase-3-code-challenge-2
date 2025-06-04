@@ -1,9 +1,6 @@
 import sqlite3
 
-CONN = sqlite3.connect("articles.db")
-CONN.row_factory = sqlite3.Row 
-
-CURSOR = CONN.cursor()
-
-def get_connection():
-    return CONN
+def get_connection(db_path="articles.db"):
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    return conn
